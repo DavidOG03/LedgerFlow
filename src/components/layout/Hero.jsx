@@ -13,7 +13,7 @@ const Hero = () => {
             <div className='absolute top-10 -right-80 w-[700px] h-[300px] rounded-[50%] bg-accent opacity-20 dark:opacity-60 blur-[80px] pointer-events-none' />
             <div className='absolute top-60 -left-80 w-[700px] h-[300px] rounded-[50%] bg-accent opacity-20 dark:opacity-60 blur-[80px] pointer-events-none' />
             <img src="/grid.png" alt="grid pattern" className='absolute -top-20 left-0 opacity-10 scale-1.2 dark:opacity-100 pointer-events-none z-[-1]' />
-            <img src="/grid.png" alt="grid pattern" className='absolute -top-20 right-0  opacity-10 scale-1.2 dark:opacity-100 pointer-events-none z-[-1]' />
+            <img src="/grid.png" alt="grid pattern" className='absolute -bottom-20 md:-top-20 right-0  opacity-10 scale-1.2 dark:opacity-100 pointer-events-none z-[-1]' />
             
             <div className='flex flex-col gap-4 text-center relative z-10 mt-10 md:mt-20'>
                 <AnimatedReveal delay={0.1} className='flex items-center gap-2 justify-center bg-accent-bg border border-accent-border rounded-full w-fit px-2 py-1 mx-auto'>
