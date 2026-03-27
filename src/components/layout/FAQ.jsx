@@ -43,10 +43,11 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-24 max-w-3xl mx-auto px-4 relative overflow-hidden">
-      <AmbientGlow position="bottom-left" />
+    <section className="py-24 px-4 relative overflow-hidden">
+      <AmbientGlow position="bottom-right" />
+      <AmbientGlow position="top-left" />
       <AnimatedText as="h2" className="text-3xl md:text-5xl font-bold text-text-h mb-12 text-center">Frequently Asked <br/> Questions</AnimatedText>
-      <div className="flex flex-col">
+      <div className="flex flex-col max-w-3xl mx-auto">
         {faqs.map((faq, index) => (
           <FAQItem key={index} question={faq.question} answer={faq.answer} />
         ))}
