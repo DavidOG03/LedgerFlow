@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: var(--bg);
+  --color-card: var(--card);
+  --color-card-alt: var(--card-alt);
+  --color-text: var(--text);
+  --color-text-h: var(--text-h);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-bg: var(--accent-bg);
+  --color-accent-border: var(--accent-border);
+  --font-sans: "Google Sans", sans-serif;
+  --font-serif: "Instrument Serif", serif;
+}
+
+:root {
+  --text: #6b6375;
+  --text-h: #0A0A0A;
+  --bg: #f3f3f3;
+  --card: #e4f8e7;
+  --card-alt: #d1f0d9;
+  --border: #e5e4e7;
+  --code-bg: #daf7e9;
+  --accent: #10B981;
+  --accent-bg: #e3f4ee;
+  --accent-border: rgba(16, 185, 129, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --font-sans: "Google Sans", sans-serif;
+  --font-serif: "Instrument Serif", serif;
+  --font-mono: ui-monospace, Consolas, monospace;
+
+  /* font: 18px/145% var(--font-sans); */
+  letter-spacing: 0.18px;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  --text: #9ca3af;
+  --text-h: #f3f4f6;
+  --bg: #0A0A0A;
+  --card: #18201a;
+  --card-alt: #142215;
+  --border: #2e303a;
+  --code-bg: #1f2028;
+  --accent: #10B981;
+  --accent-bg: #0b291e;
+  --accent-border: rgba(16, 185, 129, 0.5);
+  --social-bg: rgba(47, 48, 58, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  color-scheme: dark;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary {
+  background-color: linear-gradient(135deg, var(--accent), var(--accent-bg));
+  color: #fff;
+}
+
+.secondary {
+  background-color: var(--accent-bg);
+  color: var(--accent);
+}
