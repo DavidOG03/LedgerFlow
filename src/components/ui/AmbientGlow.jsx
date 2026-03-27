@@ -8,14 +8,15 @@ export const AmbientGlow = ({ position = 'top-left', className = '' }) => {
     'bottom-right': 'bottom-20 -right-[400px]',
     'center-right': 'top-1/2 -translate-y-1/2 -right-[400px]',
     'center-left': 'top-1/2 -translate-y-1/2 -left-[400px]',
-    'center': 'top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
+    'center': 'top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2',
+    'top-top': 'top-0 left-1/2 -translate-x-1/2 -translate-y-1/2',
   };
 
   const selectedPosition = positionClasses[position] || positionClasses['top-left'];
 
   return (
     <div 
-      className={`absolute ${selectedPosition} w-[500px] md:w-[700px] h-[300px] rounded-[50%] bg-accent opacity-20 dark:opacity-60 blur-[80px] pointer-events-none z-[-1] overflow-hidden ${className}`} 
+      className={`absolute ${selectedPosition} w-[250px] md:w-[700px] h-[250px] rounded-[50%] bg-accent opacity-20 dark:opacity-60 blur-[80px] pointer-events-none z-[1] overflow-hidden ${className}`} 
     />
   );
 };

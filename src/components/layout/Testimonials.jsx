@@ -6,11 +6,11 @@ import { HoverCard } from '../ui/HoverCard'
 
 const Testimonials = () => {
   return (
-    <section className="py-24 max-w-6xl mx-auto px-4 relative overflow-hidden">
+    <section className="py-24 px-4 relative overflow-hidden">
       <AmbientGlow position="center-left" />
       <AnimatedText as="h2" className="text-3xl md:text-5xl font-bold text-text-h mb-16 text-center tracking-tighter">Voices of Precision</AnimatedText>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {/* Testimonial 1 */}
         <HoverCard className="p-8 justify-between">
           <AnimatedReveal as="p" className="text-text text-lg leading-relaxed mb-8">

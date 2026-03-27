@@ -7,10 +7,10 @@ import FeatureCard from '../ui/FeatureCard'
 
 const Chaos = () => {
   return (
-    <section className="py-24 max-w-6xl mx-auto px-4 relative overflow-hidden">
-      <AmbientGlow position="center-left" />
+    <section className="py-24 px-4 relative overflow-hidden">
+      <AmbientGlow position="top-top" />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 max-w-6xl mx-auto">
           <AnimatedReveal delay={0.1} className='text-accent text-sm font-bold tracking-widest px-2 py-1 mr-auto'>
             THE CHAOS
           </AnimatedReveal>

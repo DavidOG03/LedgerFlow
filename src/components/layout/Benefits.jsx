@@ -6,7 +6,7 @@ import { Logs, FrameIcon, Building, CreditCard } from 'lucide-react'
 
 const Benefits = () => {
   return (
-    <section className="py-24 max-w-6xl mx-auto px-4 text-center relative overflow-hidden">
+    <section className="py-24 w-full px-4 text-center relative overflow-hidden">
       <AmbientGlow position="top-right" />
       <AnimatedText as="h2" className="text-3xl md:text-5xl font-bold text-text-h mb-16 tracking-tighter">Built for Modern Teams</AnimatedText>
       

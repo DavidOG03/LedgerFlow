@@ -5,17 +5,17 @@ import { AnimatedReveal } from '../ui/AnimatedReveal'
 
 const Showcase = () => {
   return (
-    <section className="py-24 max-w-6xl mx-auto px-4 relative overflow-hidden">
-      <AmbientGlow position="top-right" />
-      <div className="bg-card border border-border rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center gap-12 overflow-hidden relative">
-        <div className="flex-1 z-10">
-          <AnimatedText as="h2" className="text-3xl md:text-5xl font-bold text-text-h mb-6 leading-tight tracking-tighter">
+    <section className="py-24 w-full px-4 text-center relative overflow-hidden">
+      {/* <AmbientGlow position="bottom-left" /> */}
+      <div className="bg-card border border-border rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center gap-12 overflow-hidden relative max-w-6xl mx-auto">
+        <div className="flex-1 flex flex-col items-start z-10">
+          <AnimatedText as="h2" className="text-3xl md:text-5xl font-bold text-left text-text-h mb-6 leading-tight tracking-tighter">
             See LedgerFlow <br /> In Action
           </AnimatedText>
-          <AnimatedReveal as="p" className="text-text/80 text-lg mb-8 max-w-md">
+          <AnimatedReveal as="p" className="text-text/80 text-lg mb-8 max-w-md text-left">
             Take a self-guided tour through our precision interface and see how we handle high-density data without the chaos.
           </AnimatedReveal>
-          <button className="bg-text-h text-bg px-6 py-3 rounded-full font-semibold flex items-center gap-2 hover:bg-gray-200 transition-colors">
+          <button className="bg-text-h text-bg px-6 py-3 rounded-full font-semibold flex items-center gap-2 hover:bg-gray-200 transition-colors mr-auto">
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" /></svg>
             Watch the Video
           </button>
