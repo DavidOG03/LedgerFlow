@@ -19,7 +19,7 @@ const Testimonials = () => {
           <div className="flex items-center gap-4">
             <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-text-h font-bold">E</div>
             <div>
-              <h4 className="text-text-h font-medium">Eleanor Pena</h4>
+              <h3 className="text-text-h font-medium">Eleanor Pena</h3>
               <p className="text-text/60 text-sm">CEO, TechFlow</p>
             </div>
           </div>
@@ -33,7 +33,7 @@ const Testimonials = () => {
           <div className="flex items-center gap-4">
             <div className="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-text-h font-bold">B</div>
             <div>
-              <h4 className="text-text-h font-medium">Bessie Cooper</h4>
+              <h3 className="text-text-h font-medium">Bessie Cooper</h3>
               <p className="text-text/60 text-sm">VP of Marketing</p>
             </div>
           </div>
@@ -47,7 +47,7 @@ const Testimonials = () => {
           <div className="flex items-center gap-4">
             <div className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-text-h font-bold">F</div>
             <div>
-              <h4 className="text-text-h font-medium">Floyd Miles</h4>
+              <h3 className="text-text-h font-medium">Floyd Miles</h3>
               <p className="text-text/60 text-sm">Founder, Metric Media</p>
             </div>
           </div>

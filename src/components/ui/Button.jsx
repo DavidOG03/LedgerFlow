@@ -10,7 +10,7 @@ const Button = ({children, onClick, variant = 'primary', className = ''}) => {
   }
   
   return (
-    <button onClick={onClick} className={`${baseClasses} ${variants[variant]} ${className}`}>
+    <button aria-label={children} onClick={onClick} className={`${baseClasses} ${variants[variant]} ${className}`}>
       {children}
     </button>
   )
