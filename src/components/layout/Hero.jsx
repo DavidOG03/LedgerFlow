@@ -13,7 +13,7 @@ const Hero = () => {
             <div className='absolute top-10 -right-80 w-[700px] h-[300px] rounded-[50%] bg-accent opacity-20 dark:opacity-60 blur-[80px] pointer-events-none' />
             <div className='absolute top-60 -left-80 w-[700px] h-[300px] rounded-[50%] bg-accent opacity-20 dark:opacity-60 blur-[80px] pointer-events-none' />
             <img srcSet="grid-380.webp 380w, grid.webp 760w" sizes="(max-width: 412px) 380px, 760px" fetchPriority='high' alt="grid pattern" className='absolute scale-120 md:scale-100 -top-20 left-0 mix-blend-soft-light opacity-10 brightness-125 contrast-75 scale-1.2 dark:opacity-100 pointer-events-none z-[-1]' />
-            <img srcSet="grid-380.webp 380w, grid.webp 760w" sizes="(max-width: 412px) 380px, 760px" fetchPriority='high' alt="grid pattern" className='absolute hidden md:block -top-20 right-0 mix-blend-soft-light opacity-10 brightness-125 contrast-75 scale-1.2 dark:opacity-100 pointer-events-none z-[-1]' />
+            <img srcSet="grid-380.webp 380w, grid.webp 760w" sizes="(max-width: 412px) 380px, 760px" fetchPriority='high' decoding="async"alt="grid pattern" className='absolute hidden md:block -top-20 right-0 mix-blend-soft-light opacity-10 brightness-125 contrast-75 scale-1.2 dark:opacity-100 pointer-events-none z-[-1]' />
             
             <div className='flex flex-col gap-4 text-center relative z-10 mt-10 md:mt-20'>
                 <AnimatedReveal delay={0.1} className='flex items-center gap-2 justify-center bg-accent-bg border border-accent-border rounded-full w-fit px-2 py-1 mx-auto'>
@@ -40,7 +40,7 @@ const Hero = () => {
 
         {/* Hero image scrolls UP over the sticky text creating a parallax overlap offset */}
         <div className='max-w-5xl mx-auto relative z-10 mt-[20vh] md:mt-[30vh] pb-20'>
-           <img srcSet="hero-380.webp 380w, hero.webp 760w" sizes="(max-width: 412px) 380px, 760px" alt="hero pic" className="relative z-20 w-full" />
+           <img srcSet="hero-380.webp 380w, hero.webp 760w" sizes="(max-width: 412px) 380px, 760px" alt="hero pic" className="relative z-20 w-full" fetchPriority='high' decoding="async" />
         </div>
     </section>
   )
