@@ -16,22 +16,21 @@
 
 :root {
   --text: #6b6375;
-  --text-h: #0A0A0A;
+  --text-h: #0a0a0a;
   --bg: #f3f3f3;
   --card: #e4f8e7;
   --card-alt: #d1f0d9;
   --border: #e5e4e7;
   --code-bg: #daf7e9;
-  --accent: #10B981;
+  --accent: #10b981;
   --accent-bg: #e3f4ee;
   --accent-border: rgba(16, 185, 129, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --font-sans: "Google Sans","Fallback", sans-serif;
+  --font-sans: "Google Sans", "Fallback", sans-serif;
   --font-serif: "Instrument Serif", serif;
-
 
   /* font: 18px/145% var(--font-sans); */
   letter-spacing: 0.18px;
@@ -46,13 +45,13 @@
 
 .dark {
   --text: #9ca3af;
-  --text-h: #f3f4f6;
-  --bg: #0A0A0A;
+  --text-h: #dbdcdd;
+  --bg: #0a0a0a;
   --card: #18201a;
   --card-alt: #142215;
   --border: #2e303a;
   --code-bg: #1f2028;
-  --accent: #10B981;
+  --accent: #10b981;
   --accent-bg: #0b291e;
   --accent-border: rgba(16, 185, 129, 0.5);
   --social-bg: rgba(47, 48, 58, 0.5);
@@ -71,7 +70,9 @@ body {
   margin: 0;
   background-color: var(--bg);
   color: var(--text);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 #root {
@@ -101,48 +102,47 @@ button {
 /* google-sans-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Google Sans';
+  font-family: "Google Sans";
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/google-sans-v67-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/fonts/google-sans-v67-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* google-sans-500 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Google Sans';
+  font-family: "Google Sans";
   font-style: normal;
   font-weight: 500;
-  src: url('/fonts/google-sans-v67-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/fonts/google-sans-v67-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* google-sans-600 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Google Sans';
+  font-family: "Google Sans";
   font-style: normal;
   font-weight: 600;
-  src: url('/fonts/google-sans-v67-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/fonts/google-sans-v67-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* google-sans-700 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Google Sans';
+  font-family: "Google Sans";
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/google-sans-v67-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/fonts/google-sans-v67-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Instrument Serif';
+  font-family: "Instrument Serif";
   font-style: italic;
   font-weight: 400;
-  src: url('/fonts/instrument-serif-v5-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/fonts/instrument-serif-v5-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-
 @font-face {
-  font-family: 'Fallback';
-  src: local('Arial');
+  font-family: "Fallback";
+  src: local("Arial");
   size-adjust: 94%;
   ascent-override: 90%;
   descent-override: 22%;
