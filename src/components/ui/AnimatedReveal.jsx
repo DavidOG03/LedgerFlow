@@ -10,8 +10,8 @@ const prefersReducedMotion = () =>
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const loadGSAPOnce = async () => {
-  // Skip GSAP entirely if reduced motion is preferred
-  if (prefersReducedMotion()) return null;
+  // Skip GSAP entirely if reduced motion is preferred or on mobile
+  if (isMobile() || prefersReducedMotion()) return null;
 
   if (gsapLoaded)
     return { gsap: gsapInstance, ScrollTrigger: ScrollTriggerInstance };
@@ -41,6 +41,14 @@ export const AnimatedReveal = ({
 
     const initAnimation = async () => {
       const result = await loadGSAPOnce();
+
+      if (!result) {
+        if (elRef.current) {
+          elRef.current.style.opacity = "1";
+          elRef.current.style.transform = "none";
+        }
+        return;
+      }
 
       // Gracefully skip if reduced motion or unmounted
       if (!result || cancelled || !elRef.current) return;
