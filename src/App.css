@@ -104,7 +104,7 @@ button {
   font-family: 'Google Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/google-sans-v67-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/google-sans-v67-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* google-sans-500 - latin */
 @font-face {
@@ -112,7 +112,7 @@ button {
   font-family: 'Google Sans';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/google-sans-v67-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/google-sans-v67-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* google-sans-600 - latin */
 @font-face {
@@ -120,7 +120,7 @@ button {
   font-family: 'Google Sans';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/google-sans-v67-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/google-sans-v67-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* google-sans-700 - latin */
 @font-face {
@@ -128,7 +128,7 @@ button {
   font-family: 'Google Sans';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/google-sans-v67-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/google-sans-v67-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @font-face {
@@ -136,7 +136,7 @@ button {
   font-family: 'Instrument Serif';
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts/instrument-serif-v5-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/instrument-serif-v5-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 
