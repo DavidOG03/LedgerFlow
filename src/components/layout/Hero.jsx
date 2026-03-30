@@ -82,7 +82,7 @@ const Hero = () => {
           width={984}
           height={801}
           alt="LedgerFlow hero"
-          fetchpriority="high"
+          fetchPriority="high"
           decoding="async"
         />
       </div>
