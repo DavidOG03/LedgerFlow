@@ -147,3 +147,10 @@ button {
   ascent-override: 90%;
   descent-override: 22%;
 }
+
+/* Elements are visible by default */
+/* GSAP overrides this on desktop only */
+[data-animate] {
+  opacity: 1;
+  transform: none;
+}
