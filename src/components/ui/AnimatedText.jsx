@@ -5,7 +5,7 @@ import {
   useEffect,
   useRef,
 } from "react";
-import { loadGSAPOnce, isMobile } from "../utils/gsap-loader";
+import { loadGSAPOnce, isMobile } from "../../utils/gsap-loader";
 
 const splitText = (children) => {
   return Children.map(children, (child) => {
