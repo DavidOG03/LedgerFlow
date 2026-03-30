@@ -1,8 +1,5 @@
-import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
+import React, { useEffect, useRef } from 'react';
 
 const splitText = (children) => {
   return React.Children.map(children, (child) => {
@@ -32,34 +29,44 @@ export const AnimatedText = ({ as: Component = 'div', className = '', children, 
   const containerRef = useRef(null);
 
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.fromTo('.char', 
-        { 
-          opacity: 0, 
-          scale: 1.5, 
-          filter: 'blur(8px)',
-          y: 20,
-        },
-        { 
-          opacity: 1, 
-          scale: 1, 
-          filter: 'blur(0px)',
-          y: 0,
-          duration: 1.2, 
-          stagger: stagger, 
-          ease: 'power3.out',
-          delay: delay,
-          force3D: true,
-          scrollTrigger: {
-            trigger: containerRef.current,
-            start: 'top 95%',
-            once: true
-          }
-        }
-      );
-    }, containerRef);
+    let ctx;
     
-    return () => ctx.revert();
+    const loadGSAP = async () => {
+      const { gsap } = await import('gsap');
+      const { ScrollTrigger } = await import('gsap/ScrollTrigger');
+      gsap.registerPlugin(ScrollTrigger);
+
+      ctx = gsap.context(() => {
+        gsap.fromTo('.char', 
+          { 
+            opacity: 0, 
+            scale: 1.5, 
+            filter: 'blur(8px)',
+            y: 20,
+          },
+          { 
+            opacity: 1, 
+            scale: 1, 
+            filter: 'blur(0px)',
+            y: 0,
+            duration: 1.2, 
+            stagger: stagger, 
+            ease: 'power3.out',
+            delay: delay,
+            force3D: true,
+            scrollTrigger: {
+              trigger: containerRef.current,
+              start: 'top 95%',
+              once: true
+            }
+          }
+        );
+      }, containerRef);
+    };
+
+    loadGSAP();
+    
+    return () => ctx?.revert();
   }, [delay, stagger]);
 
   return (
