@@ -16,7 +16,7 @@ const Hero = () => {
           sizes="(max-width: 412px) 380px, 760px"
           fetchPriority="high"
           alt="grid pattern"
-          className="absolute scale-120 md:scale-100 -top-20 left-0 mix-blend-soft-light opacity-10 brightness-75 filter contrast-75 scale-1.2 dark:opacity-100 pointer-events-none z-[-1]"
+          className="absolute scale-120 hidden md:block md:scale-100 -top-20 left-0 mix-blend-soft-light opacity-10 brightness-75 filter contrast-75 scale-1.2 dark:opacity-100 pointer-events-none z-[-1]"
         />
         <img
           srcSet="grid-380.webp 380w, grid.webp 760w"
